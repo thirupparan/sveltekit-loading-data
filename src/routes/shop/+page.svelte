@@ -8,7 +8,9 @@
 
 <h1>Shop DATA COME FROM API CALL</h1>
 {#each products as product}
-	<h2>{product.title}</h2>
+	<a href="/shop/{product.id}" data-svelte-prefetch>
+		<h2>{product.title}</h2>
+	</a>
 	<p>{product.description}</p>
 {/each}
 
